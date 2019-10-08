@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Simple Sidebar - Start Bootstrap Template</title>
+  <style>
+      .img-radious {
+  border-radius: 50%;
+  height: 94px;
+    width: 7%;
+    }   
+    header{
+        background: black;
+        height: 171px;
+    }
+    footer{
+        position:absolute;
+        bottom:0;
+        width:100%;
+        height:30px;   /* Height of the footer */
+        background:black;
+        text-align: center;
+        color: aliceblue;
+    }
+    .errorMsg {
+    color: red;
+    margin-top: 20px;
+}
+      
+  </style>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+        <header>
+                <div class="col-12 col-md-12 text-center header-content">
+                        <img src="https://i.imgur.com/A0t1a3D.png" class="img-radious" alt="college logo">
+                        <h3 class="h1-centre">Welcome To Online Exam Registration Portal</h3>
+                     </div>
+        </header>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="list-group list-group-flush">
+        <a href="home.html" class="list-group-item list-group-item-action bg-light">Home</a>
+        <a href="student.html" class="list-group-item list-group-item-action bg-light">Registration</a>
+        <a href="syllabus.html" class="list-group-item list-group-item-action bg-light">Syllabus</a>
+        <a href="shedule.html" class="list-group-item list-group-item-action bg-light">Shedule</a>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+      <div class="container-fluid">
+            <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">subject</th>
+                        <th scope="col">Exam date</th>
+                        <th scope="col">fee</th>
+                        <th scope="col">venu</th>
+                        <th scope="col">yearOfLaunch</th>
+                        <th scope="col">comment</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                            <td></td>
+                            <td id="subject" ></td>
+                            <td id="examDate" ></td>
+                            <td id="fee"></td>
+                            <td id="venu"></td>
+                            <td id="yearL"></td>
+                            <td id="comment"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+  </div>
+  <footer>
+        <div class="fixed_Footer"> © 2015-2019 Sreejith G.K <strong>All Rights Reserved</strong>.</div>
+</footer>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+     var json = [
+            {
+                "dateOfExamination": "12/10/2019",
+                "subject": "english",
+                "fee": "200",
+                "venu": "Lion's school",
+                "yearOfLaunch": "2019",
+                "price": "200",
+                "comment": "it's a very good portel for study"
+            },
+            {
+                "dateOfExamination": "13/10/2019",
+                "subject": "malayalam",
+                "fee": "200",
+                "venu": "Lion's school",
+                "yearOfLaunch": "2019",
+                "price": "200",
+                "comment": "it's a very good portel for study"
+            },
+            {
+                "dateOfExamination": "14/10/2019",
+                "subject": "maths",
+                "fee": "200",
+                "venu": "Lion's school",
+                "yearOfLaunch": "2019",
+                "price": "200",
+                "comment": "it's a very good portel for study"
+            },
+            {
+                "dateOfExamination": "15/10/2019",
+                "subject": "social science",
+                "fee": "200",
+                "venu": "Lion's school",
+                "yearOfLaunch": "2019",
+                "price": "200",
+                "comment": "it's a very good portel for study"
+            },
+            {
+                "dateOfExamination": "16/10/2019",
+                "subject": "biology",
+                "fee": "200",
+                "venu": "Lion's school",
+                "yearOfLaunch": "2019",
+                "price": "200",
+                "comment": "it's a very good portel for study"
+            },
+            {
+                "dateOfExamination": "17/10/2019",
+                "subject": "chemistry",
+                "fee": "200",
+                "venu": "Lion's school",
+                "yearOfLaunch": "2019",
+                "price": "200",
+                "comment": "it's a very good portel for study"
+            },
+            {
+                "dateOfExamination": "18/10/2019",
+                "subject": "physics",
+                "fee": "200",
+                "venu": "Lion's school",
+                "yearOfLaunch": "2019",
+                "price": "200",
+                "comment": "it's a very good portel for study"
+            }
+];
+
+        var holder = document.getElementById("subject");
+        var venu = document.getElementById("venu");
+        var examDate = document.getElementById("examDate");
+        var fee = document.getElementById("fee");
+        var yearL = document.getElementById("yearL");
+        var comment = document.getElementById("comment");
+        for (var i = 0; i < json.length; i++){
+            holder.innerHTML += "<p>" + json[i].subject + "</p><br>";
+            venu.innerHTML += "<p>" + json[i].venu + "</p><br>";
+            examDate.innerHTML += "<p>" + json[i].dateOfExamination + "</p><br>";
+            fee.innerHTML += "<p>" + json[i].fee + "</p><br>";
+            yearL.innerHTML += "<p>" + json[i].yearOfLaunch + "</p><br>";
+            comment.innerHTML += "<p>" + json[i].comment + "</p><br>";
+        }
+  </script>
+
+</body>
+
+</html>

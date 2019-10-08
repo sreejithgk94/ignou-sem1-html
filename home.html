@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Simple Sidebar - Start Bootstrap Template</title>
+  <style>
+      .img-radious {
+  border-radius: 50%;
+  height: 94px;
+    width: 7%;
+    }   
+    header{
+        background: black;
+        height: 171px;
+    }
+    footer{
+        position:absolute;
+        bottom:0;
+        width:100%;
+        height:30px;   /* Height of the footer */
+        background:black;
+        text-align: center;
+        color: aliceblue;
+    }
+      
+  </style>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+        <header>
+                <div class="col-12 col-md-12 text-center header-content">
+                        <img src="https://i.imgur.com/A0t1a3D.png" class="img-radious" alt="college logo">
+                        <h3 class="h1-centre">Welcome To Online Exam Registration Portal</h3>
+                     </div>
+        </header>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="list-group list-group-flush">
+        <a href="home.html" class="list-group-item list-group-item-action bg-light">Home</a>
+        <a href="student.html" class="list-group-item list-group-item-action bg-light">Registration</a>
+        <a href="syllabus.html" class="list-group-item list-group-item-action bg-light">Syllabus</a>
+        <a href="shedule.html" class="list-group-item list-group-item-action bg-light">Shedule</a>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+      <div class="container-fluid">
+            <article>
+                    <div  class="col-12 col-md-12">
+                            <p>Hai ,</p>
+                            <p>it's an Online Examination service conducts examination for the registered students.</p>
+                            <P>At the beginning of each month, we announces the Examination Schedule of the month.</P>
+                            <P>This schedule includes date of examination, subject of examination, fee and venue of the examination.</P>
+                            <P>A student needs to register himself/herself for the examination of her/his choice.</P>
+                      </div>
+              </article>
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+  </div>
+  <footer>
+        <div class="fixed_Footer"> © 2015-2019 Sreejith G.K <strong>All Rights Reserved</strong>.</div>
+</footer>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
+</body>
+
+</html>
